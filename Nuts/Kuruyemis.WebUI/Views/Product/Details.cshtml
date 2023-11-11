@@ -1,0 +1,46 @@
+﻿@model Product
+
+<link href="~/css/ProductDetails.css" rel="stylesheet" />
+
+
+<div class="wrapper">
+    <div class="card">
+        <center>
+        <div class="product-right">
+            <img src="@Model.Image">
+        </div>
+            <div class="product-left">
+
+                <div class="header">
+                    <h1>@Model.Name</h1>
+
+                    <h2></h2>
+                </div>
+
+                <!--DESCRIPITON / DETAILS-->
+                <div class="product-main">
+                    <div class="focus">
+                        <span>@Model.Description</span>
+                        <span></span>
+                    </div>
+                </div>
+                <!--CHOOSE PRODUCT DETAILS-->
+                <div class="product-details">
+
+                    <!--PRODUCT TOTAL-->
+                    <div class="product-total">
+                        <h3>@Model.Price</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- ADD TO CART BUTTON -->
+            <div class="product-btns">
+                <a href="/basket/Basket" class="product-add">Sepete Ekle</a>
+                
+            </div>
+         
+    </div>
+</div>
+
+</div>
+</center>

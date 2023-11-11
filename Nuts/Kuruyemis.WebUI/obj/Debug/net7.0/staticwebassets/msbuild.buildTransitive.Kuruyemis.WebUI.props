@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Kuruyemis.WebUI.props" />
+</Project>

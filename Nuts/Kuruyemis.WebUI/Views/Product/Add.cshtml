@@ -1,0 +1,24 @@
+﻿
+<form asp-action="Add" method="post">
+    <center>
+    <label>Ürün Ad</label>
+    <input type="text" name="Name"/>
+    <label>Aciklama</label>
+    <textarea name="Description" style="width:200px;"></textarea>
+    <label>Resim</label>
+    <input type="text" name="Image"/>
+    <label>Fiyat</label>
+    <input type="text"  name="Price"/>
+    <label>Adet</label>
+    <input type="text" name="StockAmount" />
+
+    <select name = "CategoryId">
+        @foreach (var item in (ViewBag.Categories as List<Category>))
+        {
+           <option value="@item.Id" >@item.Name</option>
+        }
+    </select>
+
+    <input type="submit" />
+    </center>
+</form>

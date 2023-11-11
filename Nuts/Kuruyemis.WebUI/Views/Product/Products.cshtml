@@ -1,0 +1,20 @@
+﻿@model List<Product>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<link href="~/css/CategoryList.css" rel="stylesheet" />
+
+<section class="hero-section">
+    <div class="card-grid">
+        @foreach (Product product in Model)
+        {
+            <a class="card" href="/Product/Details/@product.Id">
+                <div class="card__background" style="background-image: url(@product.Image)"></div>
+                <div class="card__content">
+                    <p class="card__category">@product.Name</p>  
+                    <h3 class="card__heading">@product.Category.Name</h3>
+                    <h3 class="card__heading">@product.Price</h3>
+                </div>
+            </a>
+        }
+    </div>
+</section>

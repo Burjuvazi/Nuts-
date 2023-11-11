@@ -1,0 +1,52 @@
+﻿.nopadding {
+    margin-top: 0 !important;
+}
+
+.navbar {
+    background-color: #49071c;
+}
+
+footer.page-footer {
+    background-color: #49071c;
+    margin-top: 2rem;
+}
+
+.pattern-4 {
+    background-attachment: fixed;
+}
+
+.view {
+    background: url("https://i.lezzet.com.tr/images-xxlarge-secondary/kuruyemisler-nasil-saklanir-38e85f4b-b856-4abf-b5b0-3d7e5a70fb43.jpg")no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.full-bg-img {
+    color: #fff;
+}
+
+.title {
+    font-weight: 100;
+}
+
+.payment .fa:not(:first-child) {
+    margin-left: 10px;
+    color: rgba(255, 255, 255, .8);
+}
+
+input[type="text"]:focus:not([readonly]) {
+    border-color: #C00;
+    box-shadow: 0 1px 0 0 #C00;
+    color: #fff;
+}
+
+input[type="text"]:not([readonly]) + label {
+    color: rgba(255, 255, 255, .65);
+}
+
+input[type="text"]:focus:not([readonly]) + label {
+    color: #fff;
+}

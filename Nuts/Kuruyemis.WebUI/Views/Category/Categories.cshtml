@@ -1,0 +1,21 @@
+﻿@model List<Category>
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<link href="~/css/categoryList.css" rel="stylesheet" />
+
+<section class="hero-section">
+    <div class="card-grid">
+        @foreach (Category category in Model)
+        {
+            <a class="card" href="/Product/Products/@category.Id">
+                <div class="card__background" style="background-image: url(@category.Image)"></div>
+                <div class="card__content">
+                    <p class="card__category">@category.Name</p>
+                    <h3 class="card__heading">@category.Description</h3>
+                </div>
+            </a>
+        }
+    </div>
+</section>

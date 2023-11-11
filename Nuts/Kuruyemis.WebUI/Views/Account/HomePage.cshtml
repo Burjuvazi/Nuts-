@@ -1,0 +1,194 @@
+﻿@{
+    Layout = null;
+}
+
+
+
+
+<head>
+
+  @*   <link href="~/css/layout.css" rel="stylesheet" /> *@
+
+  <style>
+              .nopadding {
+          margin-top: 0 !important;
+        }
+
+        .navbar {
+          background-color: #49071c;
+        }
+
+        footer.page-footer {
+          background-color: #49071c;
+          margin-top: 2rem;
+        }
+
+        .pattern-4 {
+          background-attachment: fixed;
+        }
+
+        .view {
+          background: url("https://i.lezzet.com.tr/images-xxlarge-secondary/kuruyemisler-nasil-saklanir-38e85f4b-b856-4abf-b5b0-3d7e5a70fb43.jpg")no-repeat center center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          height: 100vh;
+        }
+
+        .full-bg-img {
+          color: #fff;
+        }
+
+        .title {
+          font-weight: 100;
+        }
+
+        .payment .fa:not(:first-child) {
+          margin-left: 10px;
+          color: rgba(255, 255, 255, .8);
+        }
+
+        input[type="text"]:focus:not([readonly]) {
+          border-color: #C00;
+          box-shadow: 0 1px 0 0 #C00;
+          color: #fff;
+        }
+
+        input[type="text"]:not([readonly])+label {
+          color: rgba(255, 255, 255, .65);
+        }
+
+        input[type="text"]:focus:not([readonly])+label {
+          color: #fff;
+        }
+  </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-toggleable-md navbar-dark ">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <strong>Tadında Kuruyemiş</strong>
+                </a>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Category/Categories">Kategoriler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!">Bize Ulaşın</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Account/SellerRegister">Satıcı Girişi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Account/Login">Üye Girişi</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fa fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </nav>
+    </header>
+
+    <div class="view hm-black-light">
+        <div class="full-bg-img flex-center pattern-4">
+            <ul>
+                <li>
+                    <h1 class="h1-responsive wow fadeInUp title"><strong>Kuruyemiş Dünyasına Hoşgeldiniz</strong></h1>
+                </li>
+                <li>
+                    <div class="col-md-3">
+                        <div class="md-form">
+                            <button class="btn btn-lg btn-danger">Ürünler</button>
+                        </div>
+                    </div>
+     
+        </li>
+
+        <li class="payment">
+            <i class="fa fa-cc-visa fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-cc-mastercard fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-money fa-2x" aria-hidden="true"></i>
+        </li>
+        </ul>           
+        </div>
+
+        <footer class="page-footer center-on-small-only nopadding">
+
+            <div class="container-fluid">
+                <div class="row">
+
+
+                    <div class="col-lg-3 offset-lg-1 hidden-lg-down">
+                        <h5 class="title">Kuruyemiş ve bilmeniz gerekenler!</h5>
+                        <p>İlk olarak şunun altını çizmekte fayda var. Kuruyemişler ilaç değildir. Herhangi bir hastalıkta tıp biliminden faydalanmak ve doktorların yönlendirmesine göre hareket etmek gerekir. Kuruyemişin faydaları ile ilgili yazılar, kuruyemiş çeşitlerinin içeriğindeki besin değerlerinden yola çıkarak ön görülerek söylenmiş ifadelerdir.</p>
+                    </div>
+
+                    <hr class="hidden-md-up">
+
+
+                    <div class="col-lg-2 col-md-4 offset-lg-1">
+                        <h5 class="title"><strong>First column</strong></h5>
+                        <ul>
+                            <li>
+                                <h6><a href="#!">Link 1</a></h6>
+                            </li>
+
+                            <li>
+                                <h6><a href="#!">Link 2</a></h6>
+                            </li>
+
+                            <li>
+                                <h6><a href="#!">Link 3</a></h6>
+                            </li>
+
+                            <li>
+                                <h6><a href="#!">Link 4</a></h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <hr>
+
+
+            <div class="call-to-action">
+                <h4> BİZE ULAŞIN</h4>
+                <br>
+                <h5>İletişim Numaramız - Adresimiz</h5>
+                <ul>
+                    <li><a target="_blank" href="http://mdbootstrap.com/getting-started/" class="btn btn-info">(0530)-640-96-36</a></li>
+                    <li><a target="_blank" href="http://mdbootstrap.com/material-design-for-bootstrap/" class="btn btn-default">Ahmet yesevi mahallesi, Hürriyet Caddesi Pendik / İstanbul</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+  
+
+</body>
+

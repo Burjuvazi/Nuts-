@@ -1,0 +1,17 @@
+﻿@model Kuruyemis.Entities.Dtos.CustomerRegisterDto
+
+<link href="/css/Register.css" rel="stylesheet" />
+
+<div class="login-page">
+    <div class="form">
+        <form class="CustomerRegister" method="post">
+
+            <input type="text" asp-for="UserName" placeholder="Email adresi" />
+            <input type="password" asp-for="Password" placeholder="Parola" />
+            <button type="submit">Kaydet</button>
+            <p class="message">
+                Zaten Üye misiniz? <a href="/Account/Login">Giriş Yap</a>
+            </p>
+        </form>
+    </div>
+</div>
